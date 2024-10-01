@@ -1,0 +1,7 @@
+node_modules/
+vite.config.js
+*.txt
+*.md
+*.pdf
+*.docx
+README.md
