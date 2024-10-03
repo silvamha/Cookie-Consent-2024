@@ -3,7 +3,7 @@ const modalCloseBtn = document.getElementById("modal-close-btn");
 const consentForm = document.getElementById("consent-form");
 const modalText = document.getElementById("modal-text");
 const declineBtn = document.getElementById("decline-btn");
-const classModalCloseBtn = document.querySelector('.modal-close-btn');
+const classModalCloseBtn = document.querySelector(".modal-close-btn");
 
 // let testTimeOut = () =>{
 //     setTimeout(() =>{
@@ -25,20 +25,25 @@ const classModalCloseBtn = document.querySelector('.modal-close-btn');
 // }, 3000);
 
 setTimeout(function () {
-
-modal.style.display='block'
-
+  modal.style.display = "inline";
 }, 3000);
 
-
 classModalCloseBtn.addEventListener("click", () => {
-modalCloseBtn.classList.remove("modal-close-btn")  
-    modal.style.display = "none";
-    modal.style.backgroundColor = "red";
+  modalCloseBtn.classList.remove("modal-close-btn");
+  modal.style.display = "none";
+  modal.style.backgroundColor = "red";
 });
 
+modalCloseBtn.addEventListener("click", () => {
+  modalCloseBtn.style.display = "none";
+  // modalCloseBtn.classList.add("modal-close-btn")
+  // modal.style.backgroundColor = "red";
+  console.log("I was clicked!");
+});
 
-
+const disbleBtn = () => {
+  modalCloseBtn.disabled = true;
+};
 
 /*
 Challenge:
